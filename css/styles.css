@@ -1,0 +1,87 @@
+/* Browser Style Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+  }
+
+#navbar {
+    transition: top 1s;
+    background-color: hsl(0,100%,30%) !important;
+}
+
+#navbar .fab:hover {
+  color: #fff;
+}
+
+#logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  /* 50% of your logo width */
+  display: block;
+}
+
+#ne {
+  color:#fff;
+}
+
+#logo:hover {
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+  body.light-theme {
+    color: #222;
+    background: #fff;
+  }
+
+ /* Dark Mode styles, inspired by https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ */
+
+  body.dark-theme {
+    color: #eee;
+    background: #121212;
+  }
+  
+  body.dark-theme img {
+    filter: brightness(.8) contrast(1.2);
+  }
+
+  .fab {
+    color: black;
+  }
+
+  .carousel {
+    padding-bottom: 25px;
+  }
+
+  section.excerpts {
+    padding-bottom: 95px !important;
+  }
+
+  .intro {
+    padding-top: 35px;
+  }
+
+  .embed-responsive-item {
+    margin: 45px 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #footer {
+    transition: bottom 0.5s;
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    #logo {
+      position: absolute;
+      left: 83%;
+      margin-left: -50px !important;  /* 50% of your logo width */
+      display: block;
+    }
+
+    .embed-responsive-item { height: 80%; }
+  }  
